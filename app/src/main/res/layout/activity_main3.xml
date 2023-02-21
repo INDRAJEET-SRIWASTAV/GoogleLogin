@@ -48,7 +48,7 @@
         android:layout_marginStart="16dp"
         android:ems="10"
         android:hint="Enter Mobile"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginRight="15dp"
