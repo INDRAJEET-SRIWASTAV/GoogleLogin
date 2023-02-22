@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard"
+    android:gravity="top"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/Blue"
+    >
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/text1"
+        android:background="@color/lightvoilet">
+
+        <ImageView
+            android:layout_width="178dp"
+            android:layout_height="179dp"
+            android:layout_marginTop="38dp"
+            android:background="@drawable/search_image"
+            android:layout_centerHorizontal="true"
+
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:text="Search"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:id="@+id/search_btn"
+        />
+    <Button
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:text="Publish a ride"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:id="@+id/publish_btn"
+        />
+
+
+</LinearLayout>

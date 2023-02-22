@@ -23,11 +23,13 @@ import java.util.concurrent.TimeUnit;
 
 public class MainActivity4 extends AppCompatActivity {
 
+
     EditText t2;
     Button b2;
     String phoneNumber;
     String otpId;
     FirebaseAuth mAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,8 @@ public class MainActivity4 extends AppCompatActivity {
         t2 = (EditText) findViewById(R.id.t2);
         b2 = (Button) findViewById(R.id.b2);
         mAuth = FirebaseAuth.getInstance();
+
+
 
         initiateOtp();
 
@@ -92,7 +96,7 @@ public class MainActivity4 extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            Intent intent = new Intent(MainActivity4.this, MainActivity2.class);
+                            Intent intent = new Intent(MainActivity4.this, dashboard.class);
                             startActivity(intent);
 
                         } else {
@@ -103,4 +107,7 @@ public class MainActivity4 extends AppCompatActivity {
                     }
                 });
     }
+
+
+
 }

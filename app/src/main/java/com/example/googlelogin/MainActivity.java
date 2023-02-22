@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -19,9 +19,9 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton Email;
+    Button Email;
     private FirebaseAuth auth;
-    ImageButton phone, lgbtn;
+    Button phone, lgbtn;
 
     GoogleSignInOptions googleSignInOptions;
     GoogleSignInClient googleSignInClient;
@@ -69,14 +69,14 @@ public class MainActivity extends AppCompatActivity {
     }
     private void signin(){
         Intent intent = googleSignInClient.getSignInIntent();
-        startActivityForResult(intent, 100);
+        startActivityForResult(intent, 200);
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if(requestCode==100){
+        if(requestCode==200){
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             try{
                 task.getResult(ApiException.class);
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void HomeActivity() {
         finish();
-        Intent intent = new Intent(getApplicationContext(),MainActivity2.class);
+        Intent intent = new Intent(getApplicationContext(), dashboard.class);
         startActivity(intent);
     }
 

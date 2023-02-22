@@ -17,33 +17,38 @@
             android:layout_width="match_parent"
             android:layout_height="350dp"
             android:background="@drawable/img"
-
             android:text="Welcome to EasyGO"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="30dp" />
 
-        <ImageButton
+        <Button
             android:id="@+id/Email"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:layout_below="@+id/img"
-            android:layout_marginStart="10dp"
+            android:text="Continue with google"
+            android:background="@drawable/round"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/googlesign" />
+             />
 
-        <ImageButton
+        <Button
             android:id="@+id/Phone"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="50dp"
             android:layout_below="@+id/Email"
-            android:layout_marginStart="10dp"
+            android:text="Continue with phone"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
+            android:background="@drawable/round"
+            android:textColor="@color/black"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/phonesignin" />
+             />
 
         <TextView
             android:id="@+id/txt1"
@@ -54,14 +59,17 @@
             android:text="OR"
             android:textSize="20dp" />
 
-        <ImageButton
+        <Button
             android:id="@+id/lgbtn"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
             android:layout_below="@+id/txt1"
-            android:layout_margin="10dp"
-            android:layout_marginBottom="50dp"
-            android:src="@drawable/emailsignin" />
+            android:text="Login with Email"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp" />
 
     </RelativeLayout>
 
