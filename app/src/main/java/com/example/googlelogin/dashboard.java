@@ -83,6 +83,7 @@ public class dashboard extends AppCompatActivity {
         FragmentTransaction ft = fm.beginTransaction();
 
         ft.add(R.id.main,fragment);
+        ft.commit();
 
     }
 }
